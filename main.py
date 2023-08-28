@@ -2,21 +2,19 @@ from customer.customer import Customer
 from review.review import Review
 from restaurant.restaurant import Restaurant
 
-
-
 # Create instances
-customer1 = Customer("Gilbert", "junior")
-customer2 = Customer("terry", "williams")
+customer1 = Customer("Gilbert", "Junior")
+customer2 = Customer("Terry", "Williams")
 
-restaurant1 = Restaurant("amazing eats")
-restaurant2 = Restaurant("Pizza plaza")
+restaurant1 = Restaurant("Amazing Eats")
+restaurant2 = Restaurant("Pizza Plaza")
 review1 = Review(customer1, restaurant1, 6)
 review2 = Review(customer2, restaurant2, 7)
 
 # Use methods
-print("Customer name:", customer1.get_full_name())
-print("Restaurant name:", restaurant1.get_name())
-print("Review rating:", review1.get_rating())
+print("Customer name:", customer1.full_name())
+print("Restaurant name:", restaurant1.name())
+print("Review rating:", review1.rating())
 
 # Adding reviews
 customer1.add_review(restaurant1, 5)
